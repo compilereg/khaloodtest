@@ -7,7 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class KhaloodaprojectApplication {
  
 	public static void main(String[] args) {
-		System.out.println("Starting...");
+		//System.out.println("Starting...");
 		SpringApplication.run(KhaloodaprojectApplication.class, args);
 	}
 
