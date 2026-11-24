@@ -10,6 +10,6 @@ public class PublicController {
 	
 	@GetMapping("/check")
 	public String getCheck() {
-		return "Healthy";
+		return "Public";
 	}
 }

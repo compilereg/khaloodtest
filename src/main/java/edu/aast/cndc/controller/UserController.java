@@ -11,7 +11,7 @@ public class UserController {
 	
 	@GetMapping("/who")
 	public String whoAmI() {
-		return "Khalooda";
+		return "User";
 	}
 
 }

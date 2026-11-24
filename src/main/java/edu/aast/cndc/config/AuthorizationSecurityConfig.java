@@ -16,7 +16,8 @@ public class AuthorizationSecurityConfig {
 			.csrf(csrf -> csrf.disable())
 			.authorizeHttpRequests( auth -> auth
 						.requestMatchers("/api/v1/public/**").permitAll()
-						.requestMatchers("/api/v1/user/**").hasRole("USER")
+						.requestMatchers("/api/v1/user/**").hasAnyRole("USER","ADMIN")
+						.requestMatchers("/api/v1/admin/**").hasRole("ADMIN")
 						.anyRequest().authenticated() 
 					)
 			.httpBasic(Customizer.withDefaults());
